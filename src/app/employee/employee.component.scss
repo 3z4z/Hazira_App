@@ -1,0 +1,16 @@
+@import "/src/styles.scss";
+.employ{
+    text-align: center;
+    p{
+        font-size: 40px;
+        text-transform: capitalize;
+        font-weight: 600;
+        padding-top: 150px;
+    }
+    a{
+        text-transform: capitalize;
+        padding-top: 20px;
+        font-size: 18px;
+        color: $bg-primary;
+    }
+}

@@ -1,0 +1,58 @@
+<nav>
+  <div class="container">
+    <div class="left">
+      <div class="brand-logo">
+        <h2 routerLink="/">Hazira</h2>
+      </div>
+    </div>
+    <div class="mid">
+      <ul>
+        <li routerLink="/employee">
+          <div class="clickitem">
+            <i class="fa-solid fa-user"></i>
+            <p>Employee</p>
+          </div>
+        </li>
+        <li routerLink="/shift">
+          <div class="clickitem">
+            <i class="fa-solid fa-layer-group"></i>
+            <p>ShiftPlanning</p>
+          </div>
+        </li>
+        <li routerLink="/leave">
+          <div class="clickitem">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <p>Leave</p>
+          </div>
+        </li>
+        <li routerLink="/report">
+          <div class="clickitem">
+            <i class="fa-solid fa-chart-area"></i>
+            <p>Reports</p>
+          </div>
+        </li>
+        <li routerLink="/time">
+          <div class="clickitem">
+            <i class="fa-solid fa-stopwatch"></i>
+            <p>TimeClock</p>
+          </div>
+        </li>
+        <li routerLink="/menu">
+          <div class="clickitem">
+            <i class="fa-solid fa-bars"></i>
+            <p>Menu</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul>
+        <li>En</li>
+        <li>U</li>
+        <li><i class="fa-solid fa-gear"></i></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav {
+  background: #5ec7a4;
+}
+nav .container {
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(12, 1fr);
+}
+nav .container .left {
+  grid-column: span 2;
+}
+nav .container .left .brand-logo {
+  cursor: pointer;
+}
+nav .container .left .brand-logo h2 {
+  text-align: left;
+  padding-top: 24px;
+  font-size: 36px;
+}
+nav .container .mid {
+  grid-column: span 8;
+}
+nav .container .mid ul {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px;
+}
+nav .container .mid ul li {
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+nav .container .mid ul li .clickitem {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+nav .container .mid ul li .clickitem i {
+  font-size: 40px;
+}
+nav .container .mid ul li .clickitem p {
+  font-weight: 500;
+  padding-top: 5px;
+}
+nav .container .mid ul li:hover, nav .container .mid ul li:focus {
+  background: #fff;
+}
+nav .container .right {
+  justify-self: end;
+  grid-column: span 2;
+}
+nav .container .right ul {
+  display: grid;
+  padding-top: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 6px;
+}
+nav .container .right ul li {
+  cursor: pointer;
+  width: 40px;
+  font-size: 22px;
+  line-height: 40px;
+  height: 40px;
+  font-weight: 600;
+  background: #fff;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .mid ul li {
+    grid-column: 3/5;
+    display: none;
+  }
+  .mid ul li:last-child {
+    display: block;
+  }
+}
+@media screen and (max-width: 599.99px) {
+  .mid ul li {
+    grid-column: 3/5;
+    display: none;
+  }
+  .mid ul li:last-child {
+    display: block;
+  }
+  .mid ul li .clickitem i {
+    transform: scale(0.8);
+    padding-top: 8px;
+  }
+  .mid ul li .clickitem p {
+    display: none;
+  }
+  .right ul li {
+    grid-column: -1;
+    display: none;
+  }
+  .right ul li:last-child {
+    display: block;
+  }
+}/*# sourceMappingURL=app.component.css.map */
